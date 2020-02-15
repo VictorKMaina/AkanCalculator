@@ -2,7 +2,7 @@ body {
   background-image: url("../img/386.jpg");
   background-position: center;
   background-repeat: repeat;
-  background-size: 200px;
+  background-size: 300px;
   text-align: center;
   color: white;
 }
@@ -11,6 +11,7 @@ body {
   height: 100vh;
   background-image: linear-gradient(160deg, rgba(60, 60, 60, 0.98), rgba(70, 15, 15, 0.98) 90%);
   overflow: scroll;
+  padding-bottom: 180px;
 }
 
 #home-main, #main {
@@ -101,4 +102,5 @@ a:hover, a:active{
   #exit{height: 20px; width: 20px;}
   #intro{max-width: 700px;}
   .navbar {margin-bottom: 0; padding: 0;}
+  #content{padding: 0;}
 }
