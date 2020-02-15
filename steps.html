@@ -5,22 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akan Calculator</title>
+  <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <script src="js/scripts.js"></script>
+  
 </head>
 
 <body>
   <div id="content">
-    <div class="navbar bg-danger justify-content-center">
-      <div class="navbar-brand">
-        <a id="logo" href="index.html">Akan|Calc</a>
-      </div>
-    </div>
+    <div id="exit" onclick="location.href='index.html'"></div>
     <div class="container d-flex flex-wrap p-5 align-content-center" id="main">
       <div id="step2" class="container mb-5" style="display: block;">
-        <h1 class="text-left display-3 m-5">Enter your date of birth.</h1>
-        <div class="row pl-5 pr-5 mt-5 mb-5">
+        <h1 class="text-center display-3 mb-5 mt-5">Enter your date of birth.</h1>
+        <div class="row">
           <div class="col-md-4 mb-3">
             <select name="Year" id="year" class="w-100 btn btn-light">
               <option value="year">- Year -</option>

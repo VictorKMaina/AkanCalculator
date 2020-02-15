@@ -18,7 +18,6 @@ body {
 #home-main, #main {
   width: 100%;
   height: 100%;
-  overflow: scroll;
   top: 0;
   bottom: 0;
   left: 0;
@@ -46,6 +45,15 @@ body {
 }
 #intro {
   max-width: 1200px;
+}
+#exit {
+  height: 20px;
+  width: 20px;
+  background-color: rgba(255, 255, 255, 0.808);
+  border-radius: 100%;
+  margin-left: 88%;
+  margin-top: 5%;
+  position: absolute;
 }
 
 .custom {
@@ -85,12 +93,15 @@ a:hover, a:active{
 }
 
 @media (max-width: 768px) {
-  body{font-size: 14px;}
-  .lead{font-size: 14px; font-weight: 400;}
-  .display-3{font-size: 35px; font-weight: 500;}
+  body{font-size: 10px;}
+  .lead{font-size: 12px; font-weight: 400;}
+  .display-3{font-size: 25qpx; font-weight: 500;}
   .container{padding: 0;}
-  [for=male],[for=female]{font-size: 16px;}
-  [type=radio]{height: 12px; width: 12px;}
+  .form-check-inline{margin: 10px;}
+  [for=male],[for=female]{font-size: 12px;}
+  [type=radio]{height: 10px; width: 10px;}
   [alt=flag-portrait]{display: none;}
   [alt=flag]{display: block;}
+  h1{font-size: 25px;}
+  #logo{font-size: 20px;}
 }
