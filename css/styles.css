@@ -24,7 +24,7 @@ body {
     margin: auto;
 }
 
-a:visited, a:link, #error1 {
+a:visited, a:link, .error {
   color: rgb(255, 224, 167);
 }
 a:hover, a:active{

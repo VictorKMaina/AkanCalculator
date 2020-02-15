@@ -136,7 +136,7 @@ function step2() {
   var step2 = document.getElementById("step2");
   var step3 = document.getElementById("step3");
   if (check() == undefined) {
-    document.getElementById("error1").innerHTML = "Please enter a valid date."
+    document.getElementsByClassName("error")[0].innerHTML = "Please enter a valid date.";
   } else {
     if (step2.style.display === "none") {
       step2.style.disp1ay = "block";
@@ -151,7 +151,7 @@ function step3() {
   var step4 = document.getElementById("step4");
   gender();
   if (gender() == undefined) {
-    document.getElementById("error2").innerHTML = "Please pick one option.";
+    document.getElementsByClassName("error")[1].innerHTML = "Please pick one option.";
   } else if (step3.style.display === "none") {
     step3.style.disp1ay = "block";
   } else {
