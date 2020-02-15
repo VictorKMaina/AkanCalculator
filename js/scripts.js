@@ -8,7 +8,7 @@ var check = function() {
     d.setFullYear(parseInt(userYear));
     return d.getDay();
 }
-function female() {
+function day() {
     if (check() === 0) {
         return ("Sunday");
     } else if (check() === 1) {
@@ -24,6 +24,40 @@ function female() {
     } else if (check() === 6) {
         return ("Saturday");
     }
+}
+function male() {
+  if (check() === 0) {
+      return ("Kwasi");
+  } else if (check() === 1) {
+      return ("Kwadwo");
+  } else if (check() === 2) {
+      return ("Kwabena");
+  } else if (check() === 3) {
+      return ("Kwaku");
+  } else if (check() === 4) {
+      return ("Yaw");
+  } else if (check() === 5) {
+      return ("Kofi");
+  } else if (check() === 6) {
+      return ("Kwame");
+  }
+}
+function female() {
+  if (check() === 0) {
+      return ("Akosua");
+  } else if (check() === 1) {
+      return ("Adwoa");
+  } else if (check() === 2) {
+      return ("Abenaa");
+  } else if (check() === 3) {
+      return ("Akua");
+  } else if (check() === 4) {
+      return ("Yaa");
+  } else if (check() === 5) {
+      return ("Afua");
+  } else if (check() === 6) {
+      return ("Ama");
+  }
 }
 function gender() {
   var male = document.getElementById("male").checked;
