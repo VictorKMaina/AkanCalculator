@@ -41,3 +41,34 @@ function output() {
 function entry() {
     document.getElementById("entry").innerHTML = output();
 }
+
+function step1() {
+  var step1 = document.getElementById("step1");
+  var step2 = document.getElementById("step2");
+  if (step1.style.display === "none") {
+    step1.style.disp1ay = "block";
+  } else {
+    step1.style.display = "none";
+    step2.style.display = "block";
+  }
+}
+function step2() {
+  var step2 = document.getElementById("step2");
+  var step3 = document.getElementById("step3");
+  if (step2.style.display === "none") {
+    step2.style.disp1ay = "block";
+  } else {
+    step2.style.display = "none";
+    step3.style.display = "block";
+  }
+}
+function step3() {
+  var step3 = document.getElementById("step3");
+  var step4 = document.getElementById("step4");
+  if (step3.style.display === "none") {
+    step3.style.disp1ay = "block";
+  } else {
+    step3.style.display = "none";
+    step4.style.display = "block";
+  }
+}
