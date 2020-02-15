@@ -95,7 +95,7 @@ a:hover, a:active{
 @media (max-width: 768px) {
   body{font-size: 10px;}
   .lead{font-size: 12px; font-weight: 400;}
-  .display-3{font-size: 25qpx; font-weight: 500;}
+  .display-3{font-size: 25px; font-weight: 500;}
   .container{padding: 0;}
   .form-check-inline{margin: 10px;}
   [for=male],[for=female]{font-size: 12px;}
