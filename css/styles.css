@@ -36,10 +36,6 @@ body {
   text-decoration: none;
 }
 
-[alt=flag-portrait]{
-  display: block;
-  max-height: 700px;
-}
 [alt=flag]{
   display: block;
 }
