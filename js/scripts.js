@@ -113,7 +113,9 @@ function female() {
 function gender() {
   var male = document.getElementById("male").checked;
   var female = document.getElementById("female").checked;
-  if (male == true) {
+  if (male == false && female == false) {
+    return undefined;
+  } else if (male == true) {
     return "male";
   } else if (female == true) {
     return "female";
@@ -148,7 +150,9 @@ function step3() {
   var step3 = document.getElementById("step3");
   var step4 = document.getElementById("step4");
   gender();
-  if (step3.style.display === "none") {
+  if (gender() == undefined) {
+    document.getElementById("error2").innerHTML = "Please pick one option.";
+  } else if (step3.style.display === "none") {
     step3.style.disp1ay = "block";
   } else {
     step3.style.display = "none";
