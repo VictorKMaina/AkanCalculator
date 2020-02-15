@@ -101,7 +101,7 @@ function step3() {
     if (gender() == "male") {
       document.getElementById("akanName").innerHTML = male();
     } else if (gender() == "female") {
-      document.getElementById("akanName").innerHTML = "female";
+      document.getElementById("akanName").innerHTML = female();
     }
   }
 }
