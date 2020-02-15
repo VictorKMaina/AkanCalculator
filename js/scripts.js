@@ -8,6 +8,22 @@ var check = function() {
     d.setFullYear(parseInt(userYear));
     return d.getDay();
 }
+var date = function() {
+  var d = new Date();
+  var userDate = document.getElementById("date").value;
+  var userMonth = document.getElementById("month").value;
+  var userYear = document.getElementById("year").value;
+  d.setDate(parseInt(userDate));
+  d.setMonth(parseInt(userMonth) - 1);
+  d.setFullYear(parseInt(userYear));
+  var dateDigits = [d.getDate(), d.getMonth(), d.getFullYear()];
+  var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  if (dateDigits[1] == 0) {
+    return month[0] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 1) {
+    return month[1] + " " + d.getDate() + ", " + d.getFullYear();
+  }
+}
 function day() {
     if (check() === 0) {
         return ("Sunday");
@@ -25,6 +41,7 @@ function day() {
         return ("Saturday");
     }
 }
+
 function male() {
   if (check() === 0) {
       return ("Kwasi");
@@ -104,5 +121,6 @@ function step3() {
       document.getElementById("akanName").innerHTML = female();
     }
     document.getElementById("dayOfBirth").innerHTML = day();
+    document.getElementById("dateOfBirth").innerHTML = date();
   }
 }
