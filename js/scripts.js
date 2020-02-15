@@ -6,7 +6,11 @@ var check = function () {
   d.setDate(parseInt(userDate));
   d.setMonth(parseInt(userMonth) - 1);
   d.setFullYear(parseInt(userYear));
-  return d.getDay();
+  if (userMonth == "month" || userDate == "date" || userYear == "year") {
+    return undefined;
+  } else {
+    return d.getDay();
+  }
 }
 var date = function () {
   var d = new Date();
@@ -119,7 +123,7 @@ function step1() {
 function step2() {
   var step2 = document.getElementById("step2");
   var step3 = document.getElementById("step3");
-  if (date() == undefined) {
+  if (check() == undefined) {
     document.getElementById("error1").innerHTML = "Please enter a valid date."
   } else {
     if (step2.style.display === "none") {
