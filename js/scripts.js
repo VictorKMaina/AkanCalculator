@@ -22,6 +22,26 @@ var date = function() {
     return month[0] + " " + d.getDate() + ", " + d.getFullYear();
   } else if (dateDigits[1] == 1) {
     return month[1] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 2) {
+    return month[2] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 3) {
+    return month[3] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 4) {
+    return month[4] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 5) {
+    return month[5] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 6) {
+    return month[6] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 7) {
+    return month[7] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 8) {
+    return month[8] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 9) {
+    return month[9] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 10) {
+    return month[10] + " " + d.getDate() + ", " + d.getFullYear();
+  } else if (dateDigits[1] == 11) {
+    return month[11] + " " + d.getDate() + ", " + d.getFullYear();
   }
 }
 function day() {
