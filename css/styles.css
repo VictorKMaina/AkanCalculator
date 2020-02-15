@@ -36,6 +36,10 @@ body {
   text-decoration: none;
 }
 
+.lead {
+  text-align: left;
+}
+
 [alt=flag]{
   display: block;
 }
