@@ -1,14 +1,3 @@
-// var check = function () {
-//   var d = new Date();
-//   var userDate = document.getElementById("date").value;
-//   var userMonth = document.getElementById("month").value;
-//   var userYear  = document.getElementById("year").value;
-//   d.setDate(parseInt(14));
-//   d.setMonth(parseInt(2)-1);
-//   d.setFullYear(parseInt(2020));
-//   return d.getDay();
-// }
-
 var check = function() {
     var d = new Date();
     var userDate = document.getElementById("date").value;
@@ -19,7 +8,6 @@ var check = function() {
     d.setFullYear(parseInt(userYear));
     return d.getDay();
 }
-
 function output() {
     if (check() === 0) {
         return ("Sunday");
@@ -37,6 +25,12 @@ function output() {
         return ("Saturday");
     }
 }
+
+
+
+
+
+
 
 function entry() {
     document.getElementById("entry").innerHTML = output();
