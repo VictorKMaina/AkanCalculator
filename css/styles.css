@@ -59,10 +59,10 @@ body {
 }
 
 a:visited, a:link, .error {
-  color: rgb(255, 224, 167);
+  color: #ffacb4;
 }
 a:hover, a:active{
-  color: rgb(255, 224, 167);
+  color: #dc3545;
   text-decoration: underline;
 }
 
@@ -77,23 +77,14 @@ a:hover, a:active{
 }
 
 @media (max-width: 991px) {
-  body{font-size: 20px;}
-  .lead{font-size: 20px; font-weight: 400;}
-  .display-3{font-size: 60px; font-weight: 500;}
-  .container{padding: 0;}
-  #main{height: 100%; width: 100%; border-radius: 0; max-width: 100%;}
-  [for=male],[for=female]{font-size: 20px;}
-  [type=radio]{height: 18px; width: 18px;}
-}
-
-@media (max-width: 767px) {
-  body{font-size: 10px;}
-  .lead{font-size: 12px; font-weight: 400;}
-  .display-3{font-size: 25px; font-weight: 500;}
+  body{font-size: 12px;}
+  .lead{font-size: 20px; font-weight: 400; text-align: justify;}
+  .display-3{font-size: 40px; font-weight: 500;}
   .container{padding: 0;}
   .form-check-inline{margin: 10px;}
-  [for=male],[for=female]{font-size: 12px;}
-  [type=radio]{height: 10px; width: 10px;}
+  [for=male],[for=female]{font-size: 20px;}
+  [type=radio]{height: 13px; width: 13px;}
   h1{font-size: 25px;}
-  #logo{font-size: 20px;}
+  #logo{font-size: 35px;}
+  .error{font-size: 1.3em;}
 }
