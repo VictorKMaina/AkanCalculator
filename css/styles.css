@@ -41,7 +41,7 @@ body {
   max-height: 700px;
 }
 [alt=flag]{
-  display: none;
+  display: block;
 }
 #intro {
   max-width: 1200px;
@@ -88,11 +88,9 @@ a:hover, a:active{
   #main{height: 100%; width: 100%; border-radius: 0; max-width: 100%;}
   [for=male],[for=female]{font-size: 20px;}
   [type=radio]{height: 18px; width: 18px;}
-  [alt=flag-portrait]{display: none;}
-  [alt=flag]{display: block;}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body{font-size: 10px;}
   .lead{font-size: 12px; font-weight: 400;}
   .display-3{font-size: 25px; font-weight: 500;}
@@ -100,8 +98,6 @@ a:hover, a:active{
   .form-check-inline{margin: 10px;}
   [for=male],[for=female]{font-size: 12px;}
   [type=radio]{height: 10px; width: 10px;}
-  [alt=flag-portrait]{display: none;}
-  [alt=flag]{display: block;}
   h1{font-size: 25px;}
   #logo{font-size: 20px;}
 }
