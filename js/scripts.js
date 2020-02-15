@@ -122,16 +122,6 @@ function gender() {
   }
 }
 
-function step1() {
-  var step1 = document.getElementById("step1");
-  var step2 = document.getElementById("step2");
-  if (step1.style.display === "none") {
-    step1.style.disp1ay = "block";
-  } else {
-    step1.style.display = "none";
-    step2.style.display = "block";
-  }
-}
 function step2() {
   var step2 = document.getElementById("step2");
   var step3 = document.getElementById("step3");
