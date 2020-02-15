@@ -99,7 +99,7 @@ function step3() {
     step3.style.display = "none";
     step4.style.display = "block";
     if (gender() == "male") {
-      document.getElementById("akanName").innerHTML = "male";
+      document.getElementById("akanName").innerHTML = male();
     } else if (gender() == "female") {
       document.getElementById("akanName").innerHTML = "female";
     }
