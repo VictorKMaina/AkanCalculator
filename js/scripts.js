@@ -75,7 +75,6 @@ function day() {
     return ("Saturday");
   }
 }
-
 function male() {
   if (check() === 0) {
     return ("Kwasi");
@@ -121,7 +120,6 @@ function gender() {
     return "female";
   }
 }
-
 function step2() {
   var step2 = document.getElementById("step2");
   var step3 = document.getElementById("step3");
