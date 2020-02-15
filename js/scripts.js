@@ -103,5 +103,6 @@ function step3() {
     } else if (gender() == "female") {
       document.getElementById("akanName").innerHTML = female();
     }
+    document.getElementById("dayOfBirth").innerHTML = day();
   }
 }
