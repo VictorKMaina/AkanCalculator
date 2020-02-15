@@ -19,6 +19,8 @@ var check = function () {
   d.setFullYear(parseInt(userYear));
   if (userMonth == "month" || userDate == "date" || userYear == "year") {
     return undefined;
+  } else if ((userMonth == 4 || userMonth == 6 || userMonth == 9 || userMonth == 11) && parseInt(userDate)>30) {
+    return undefined;
   } else if (userMonth == 2 && parseInt(userYear) % 100 === 0 && parseInt(userYear) % 400 !== 0 && parseInt(userDate) > 28) {
     return undefined;
   }
