@@ -8,7 +8,7 @@ var check = function() {
     d.setFullYear(parseInt(userYear));
     return d.getDay();
 }
-function output() {
+function female() {
     if (check() === 0) {
         return ("Sunday");
     } else if (check() === 1) {
@@ -25,15 +25,14 @@ function output() {
         return ("Saturday");
     }
 }
-
-
-
-
-
-
-
-function entry() {
-    document.getElementById("entry").innerHTML = output();
+function gender() {
+  var male = document.getElementById("male").checked;
+  var female = document.getElementById("female").checked;
+  if (male == true) {
+    return "male";
+  } else if (female == true) {
+    return "female";
+  }
 }
 
 function step1() {
@@ -59,10 +58,16 @@ function step2() {
 function step3() {
   var step3 = document.getElementById("step3");
   var step4 = document.getElementById("step4");
+  gender();
   if (step3.style.display === "none") {
     step3.style.disp1ay = "block";
   } else {
     step3.style.display = "none";
     step4.style.display = "block";
+    if (gender() == "male") {
+      document.getElementById("akanName").innerHTML = "male";
+    } else if (gender() == "female") {
+      document.getElementById("akanName").innerHTML = "female";
+    }
   }
 }
