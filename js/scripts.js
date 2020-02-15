@@ -1,14 +1,14 @@
-var check = function() {
-    var d = new Date();
-    var userDate = document.getElementById("date").value;
-    var userMonth = document.getElementById("month").value;
-    var userYear = document.getElementById("year").value;
-    d.setDate(parseInt(userDate));
-    d.setMonth(parseInt(userMonth) - 1);
-    d.setFullYear(parseInt(userYear));
-    return d.getDay();
+var check = function () {
+  var d = new Date();
+  var userDate = document.getElementById("date").value;
+  var userMonth = document.getElementById("month").value;
+  var userYear = document.getElementById("year").value;
+  d.setDate(parseInt(userDate));
+  d.setMonth(parseInt(userMonth) - 1);
+  d.setFullYear(parseInt(userYear));
+  return d.getDay();
 }
-var date = function() {
+var date = function () {
   var d = new Date();
   var userDate = document.getElementById("date").value;
   var userMonth = document.getElementById("month").value;
@@ -45,55 +45,55 @@ var date = function() {
   }
 }
 function day() {
-    if (check() === 0) {
-        return ("Sunday");
-    } else if (check() === 1) {
-        return ("Monday");
-    } else if (check() === 2) {
-        return ("Tuesday");
-    } else if (check() === 3) {
-        return ("Wednesday");
-    } else if (check() === 4) {
-        return ("Thursday");
-    } else if (check() === 5) {
-        return ("Friday");
-    } else if (check() === 6) {
-        return ("Saturday");
-    }
+  if (check() === 0) {
+    return ("Sunday");
+  } else if (check() === 1) {
+    return ("Monday");
+  } else if (check() === 2) {
+    return ("Tuesday");
+  } else if (check() === 3) {
+    return ("Wednesday");
+  } else if (check() === 4) {
+    return ("Thursday");
+  } else if (check() === 5) {
+    return ("Friday");
+  } else if (check() === 6) {
+    return ("Saturday");
+  }
 }
 
 function male() {
   if (check() === 0) {
-      return ("Kwasi");
+    return ("Kwasi");
   } else if (check() === 1) {
-      return ("Kwadwo");
+    return ("Kwadwo");
   } else if (check() === 2) {
-      return ("Kwabena");
+    return ("Kwabena");
   } else if (check() === 3) {
-      return ("Kwaku");
+    return ("Kwaku");
   } else if (check() === 4) {
-      return ("Yaw");
+    return ("Yaw");
   } else if (check() === 5) {
-      return ("Kofi");
+    return ("Kofi");
   } else if (check() === 6) {
-      return ("Kwame");
+    return ("Kwame");
   }
 }
 function female() {
   if (check() === 0) {
-      return ("Akosua");
+    return ("Akosua");
   } else if (check() === 1) {
-      return ("Adwoa");
+    return ("Adwoa");
   } else if (check() === 2) {
-      return ("Abenaa");
+    return ("Abenaa");
   } else if (check() === 3) {
-      return ("Akua");
+    return ("Akua");
   } else if (check() === 4) {
-      return ("Yaa");
+    return ("Yaa");
   } else if (check() === 5) {
-      return ("Afua");
+    return ("Afua");
   } else if (check() === 6) {
-      return ("Ama");
+    return ("Ama");
   }
 }
 function gender() {
@@ -119,11 +119,15 @@ function step1() {
 function step2() {
   var step2 = document.getElementById("step2");
   var step3 = document.getElementById("step3");
-  if (step2.style.display === "none") {
-    step2.style.disp1ay = "block";
+  if (date() == undefined) {
+    document.getElementById("error1").innerHTML = "Please enter a valid date."
   } else {
-    step2.style.display = "none";
-    step3.style.display = "block";
+    if (step2.style.display === "none") {
+      step2.style.disp1ay = "block";
+    } else {
+      step2.style.display = "none";
+      step3.style.display = "block";
+    }
   }
 }
 function step3() {

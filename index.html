@@ -14,7 +14,8 @@
   <div class="container d-flex flex-wrap p-5 align-content-center" id="main">
     <div id="step1" class="container">
       <h1 class="display-3 text-left mb-3">Akan Names</h1>
-      <p class="lead mx-auto m-3 text-left"> Almost everyone knows the date of their birth. But do you what <em>day</em>
+      <p class="lead mx-auto m-3 text-left"> You probably know the date of your birth. Almost everyone does. But do you
+        know what <strong><em>day</em></strong>
         of the
         week you were born? Probably not. It's not something that many people track ― unless you were born in Ghana.
         <br>
@@ -178,6 +179,7 @@
           </select>
         </div>
       </div>
+      <p id="error1"></p>
       <button type="button" class="btn btn-light mt-4 lead pl-5 pr-5 p-2" onclick="step2()">Continue</button>
     </div>
 
@@ -185,15 +187,15 @@
       <h1 class="display-3 mb-4">Enter your gender.</h1>
       <form>
         <div class="form-check-inline lead">
-        <label for="male">
-          <input type="radio" name="gender" class="form-check-input" id="male"> Male
-        </label>
-      </div>
-      <div class="form-check-inline lead">
-        <label for="female">
-          <input type="radio" name="gender" class="form-check-input" id="female"> Female
-        </label>
-      </div>
+          <label for="male">
+            <input type="radio" name="gender" class="form-check-input" id="male"> Male
+          </label>
+        </div>
+        <div class="form-check-inline lead">
+          <label for="female">
+            <input type="radio" name="gender" class="form-check-input" id="female"> Female
+          </label>
+        </div>
       </form>
       <button type="button" class="btn btn-light mt-4 lead pl-5 pr-5 p-2" onclick="step3()">Continue</button>
     </div>
@@ -201,7 +203,8 @@
     <div id="step4" class="container" style="display: none;">
       <h1>Your Akan name is <span id="akanName">not known</span>.</h1>
       <p>Your were born on a <span id="dayOfBirth">(day)</span>, <span id="dateOfBirth">(date)</span>.</p>
-      <button type="button" class="btn btn-success font-weight-bold mt-4 lead pl-4 pr-4" onclick="location.reload(true)">RESET</button>
+      <button type="button" class="btn btn-success font-weight-bold mt-4 lead pl-4 pr-4"
+        onclick="location.reload(true)">RESET</button>
     </div>
   </div>
 </body>
