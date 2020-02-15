@@ -9,12 +9,16 @@ body {
   color: white;
 }
 
+#content {
+  height: 100vh;
+  background-image: linear-gradient(160deg, rgba(60, 60, 60, 0.98), rgba(70, 15, 15, 0.98) 90%);
+}
+
 #main {
-    width: 85%;
-    height: 80%;
+    width: 80%;
+    height: 85%;
     min-height: 400px;
     max-width: 768px;
-    background-color: rgba(60, 60, 60, .9);
     border-radius: 20px;
     position: absolute;
     top: 0;
@@ -27,7 +31,6 @@ body {
   width: 100%;
   height: 100vh;
   min-height: 400px;
-  background-color: rgba(60, 60, 60, .9);
   overflow: scroll;
   top: 0;
   bottom: 0;
@@ -49,13 +52,19 @@ body {
 
 [alt=flag-portrait]{
   display: block;
-  max-height: 600px;
+  max-height: 700px;
 }
 [alt=flag]{
   display: none;
 }
 #intro {
   max-width: 1200px;
+}
+
+.custom {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 a:visited, a:link, .error {
@@ -81,7 +90,7 @@ a:hover, a:active{
   .lead{font-size: 20px; font-weight: 400;}
   .display-3{font-size: 60px; font-weight: 500;}
   .container{padding: 0;}
-  #main{width: 100%; height: 100%; border-radius: 0; background-image: linear-gradient(#3c3c3c44 15%, #d1880155);}
+  #main{height: 100%; width: 100%; border-radius: 0; max-width: 100%;}
   [for=male],[for=female]{font-size: 25px;}
   [type=radio]{height: 18px; width: 18px;}
   [alt=flag-portrait]{display: none;}
@@ -93,7 +102,6 @@ a:hover, a:active{
   .lead{font-size: 18px; font-weight: 400;}
   .display-3{font-size: 40px; font-weight: 500;}
   .container{padding: 0;}
-  #main{width: 100%; height: 100%; border-radius: 0; background-image: linear-gradient(#3c3c3c44 15%, #d1880155);}
   [for=male],[for=female]{font-size: 25px;}
   [type=radio]{height: 18px; width: 18px;}
   [alt=flag-portrait]{display: none;}
