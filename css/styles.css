@@ -1,8 +1,6 @@
 body {
-  background-color: #ff0000;
   background-image: url("../img/386.jpg");
   background-position: center;
-  background-blend-mode: screen;
   background-repeat: repeat;
   background-size: 200px;
   text-align: center;
@@ -17,7 +15,8 @@ body {
 
 #home-main, #main {
   width: 100%;
-  height: 100%;
+  height: 80%;
+  min-height: 500px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -38,23 +37,23 @@ body {
 
 .lead {
   text-align: left;
+  font-size: 1.5em;
 }
 #info {
   text-align: center;
 }
-[alt=flag]{
-  display: block;
-}
+
 #intro {
-  max-width: 1200px;
+  max-width: 1580px;
 }
 #exit {
   height: 30px;
   width: 30px;
   border-radius: 100%;
-  margin-left: 88%;
-  margin-top: 5%;
-  position: absolute;
+  margin-left: 10%;
+  /* margin-left: 88%;
+  margin-top: 5%; */
+  /* position: absolute; */
 }
 
 .custom {
@@ -67,7 +66,7 @@ a:visited, a:link, .error {
   color: #ffacb4;
 }
 a:hover, a:active{
-  color: #dc3545;
+  color: #ce1126;
   text-decoration: underline;
 }
 
@@ -84,16 +83,22 @@ a:hover, a:active{
   font-size: 1.2em;
 }
 
-@media (max-width: 991px) {
+.navbar {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
   body{font-size: 12px;}
   .lead{font-size: 20px; font-weight: 400; text-align: justify;}
-  .display-3{font-size: 40px; font-weight: 500;}
+  .display-3{font-size: 30px; font-weight: 500;}
   .container{padding: 0;}
   .form-check-inline{margin: 10px;}
   [for=male],[for=female]{font-size: 20px;}
   [type=radio]{height: 13px; width: 13px;}
-  h1{font-size: 40px;}
+  h1{font-size: 30px;}
   #logo{font-size: 35px;}
   .error{font-size: 1.3em;}
   #exit{height: 20px; width: 20px;}
+  #intro{max-width: 700px;}
+  .navbar {margin-bottom: 0; padding: 0;}
 }

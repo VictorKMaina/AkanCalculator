@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akan Calculator</title>
-  <meta name="theme-color" content="#dc3545">
+  <meta name="theme-color" content="#ce1126">
   <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -14,12 +14,19 @@
 
 <body>
   <div id="content">
-    <div id="exit" class="d-flex flex-wrap align-content-center text-center justify-content-center text-dark" onclick="location.href='index.html'">
-      <img src="img/close.png" alt="close" style="height: 100%;">
+    <div class="navbar bg-transparent justify-content-center">
+      <div class="navbar-brand">
+        <a id="logo" href="index.html">Akan|Calc</a>
+      </div>
+      <div id="exit" class="d-flex flex-wrap align-content-center text-center justify-content-center text-dark"
+        onclick="location.href='index.html'">
+        <img src="img/close.png" alt="close" style="height: 100%;">
+      </div>
     </div>
+
     <div class="container d-flex flex-wrap p-5 align-content-center" id="main">
-      <div id="step2" class="container mb-5" style="display: block;">
-        <h1 class="text-center display-3 mb-5 mt-5">Enter your date of birth.</h1>
+      <div id="step2" class="container" style="display: block;">
+        <h1 class="text-center display-3 mb-5">Enter your date of birth.</h1>
         <div class="row">
           <div class="col-md-4 mb-3">
             <select name="Year" id="year" class="w-100 btn btn-light">
@@ -172,7 +179,7 @@
           </div>
         </div>
         <p class="error"></p>
-        <button type="button" class="btn btn-danger mt-4 lead pl-5 pr-5 p-2" onclick="step2()">Continue</button>
+        <button type="button" class="btn btn-danger lead mt-4 pl-5 pr-5 p-2" onclick="step2()">Continue</button>
       </div>
 
       <div class="container" id="step3" style="display: none;">
@@ -194,8 +201,9 @@
       </div>
 
       <div id="step4" class="container" style="display: none;">
-        <h1>Your Akan name is <span id="akanName">not known</span>.</h1>
-        <p id="info" class="lead">Your were born on <span id="dayOfBirth">(day)</span>, <span id="dateOfBirth">(date)</span>.</p>
+        <h1 class="display-3">Your Akan name is <span id="akanName">not known</span>.</h1>
+        <p id="info" class="lead">Your were born on <span id="dayOfBirth">(day)</span>, <span
+            id="dateOfBirth">(date)</span>.</p>
         <button type="button" class="btn btn-success font-weight-bold mt-4 lead pl-4 pr-4"
           onclick="location.reload()">RESET</button>
       </div>
