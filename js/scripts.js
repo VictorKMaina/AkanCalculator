@@ -12,11 +12,9 @@ var check = function () {
     return undefined;
   } else if (userMonth == 2 && parseInt(userYear) % 100 === 0 && parseInt(userYear) % 400 !== 0 && parseInt(userDate) > 28) {
     return undefined;
-  }
-  else if (userMonth == 2 && parseInt(userYear) % 4 !== 0 && parseInt(userDate) > 28) {
+  } else if (userMonth == 2 && parseInt(userYear) % 4 !== 0 && parseInt(userDate) > 28) {
     return undefined;
-  }
-  else if (userMonth == 2 && parseInt(userDate) > 29) {
+  } else if (userMonth == 2 && parseInt(userDate) > 29) {
     return undefined;
   } else {
     return d.getDay();
@@ -58,6 +56,7 @@ var date = function () {
     return month[11] + " " + d.getDate() + ", " + d.getFullYear();
   }
 }
+
 function day() {
   if (check() === 0) {
     return ("Sunday");
@@ -75,6 +74,7 @@ function day() {
     return ("Saturday");
   }
 }
+
 function male() {
   if (check() === 0) {
     return ("Kwasi");
@@ -92,6 +92,7 @@ function male() {
     return ("Kwame");
   }
 }
+
 function female() {
   if (check() === 0) {
     return ("Akosua");
@@ -109,6 +110,7 @@ function female() {
     return ("Ama");
   }
 }
+
 function gender() {
   var male = document.getElementById("male").checked;
   var female = document.getElementById("female").checked;
@@ -120,20 +122,20 @@ function gender() {
     return "female";
   }
 }
+
 function step2() {
   var step2 = document.getElementById("step2");
   var step3 = document.getElementById("step3");
   if (check() == undefined) {
     document.getElementsByClassName("error")[0].innerHTML = "Please enter a valid date.";
+  } else if (step2.style.display === "none") {
+    step2.style.disp1ay = "block";
   } else {
-    if (step2.style.display === "none") {
-      step2.style.disp1ay = "block";
-    } else {
-      step2.style.display = "none";
-      step3.style.display = "block";
-    }
+    step2.style.display = "none";
+    step3.style.display = "block";
   }
 }
+
 function step3() {
   var step3 = document.getElementById("step3");
   var step4 = document.getElementById("step4");

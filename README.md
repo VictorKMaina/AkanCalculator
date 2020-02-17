@@ -60,7 +60,7 @@ This website was developed using:
 * GitHub
 
 ## Support and contact details
-If you would like to contact me, email me at [vk13runic@gmail.com](mailto:vk13runic@gmail.com "E-mail me"). The project is open-source, so feel free to edit it and use it as wish. If you have any ideas on how to make it better, don't hesitate to reach out.
+If you would like to contact me, email me at [vk13runic@gmail.com](mailto:vk13runic@gmail.com "E-mail me"). The project is open-source, so feel free to edit it and use it as you wish. If you have any ideas on how to make it better, don't hesitate to reach out.
 ## License
 MIT License
 
