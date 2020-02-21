@@ -1,12 +1,18 @@
+var currentDate = new Date();
+
 var check = function () {
-  var d = new Date();
+  
   var userDate = document.getElementById("date").value;
   var userMonth = document.getElementById("month").value;
   var userYear = document.getElementById("year").value;
+  var d = new Date(userYear+"-"+userMonth+"-"+userDate);
   d.setDate(parseInt(userDate));
   d.setMonth(parseInt(userMonth) - 1);
   d.setFullYear(parseInt(userYear));
   if (userMonth == "month" || userDate == "date" || userYear == "year") {
+    return undefined;
+  } else if (currentDate < d) {
+    // alert(currentDate < d);
     return undefined;
   } else if ((userMonth == 4 || userMonth == 6 || userMonth == 9 || userMonth == 11) && parseInt(userDate) > 30) {
     return undefined;
